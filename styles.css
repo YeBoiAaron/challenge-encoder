@@ -1,0 +1,90 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.titulo{
+    width: auto;
+    position: relative;
+    padding: 20px;
+    margin: 40px 20px 20px 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.texto{
+    margin: 40px 0 40px 0;
+    height: 460px;
+}
+
+.texto textarea{
+    border: none;
+    overflow: auto;
+    outline: none;
+    padding: 20px;
+    resize: none;
+}
+
+.texto-entrada{
+    font-size: 30px;
+    height: 460px;
+    width: 55%;
+    margin-left: 5%;
+    vertical-align: top;
+    background-color: aliceblue;
+}
+
+.texto-salida{
+    font-size: 20px;
+    height: 600px;
+    width: 30%;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.texto-entrada::placeholder{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 30px;
+}
+
+.advertencia{
+    margin-left: 17%;
+    padding-left: 10px;
+    color: #333333;
+}
+
+.botones{
+    margin: 20px 17%;
+}
+
+.botones input{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px 15px 10px 15px;
+    margin: 0 10px;
+}
+
+.encriptar{
+    border: none;
+    background-color: #333333;
+    color: white;
+    transition: 500ms;
+}
+
+.encriptar:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+
+.desencriptar{
+    border-color: #333333;
+    background-color: #F3F3F3;
+    color: #333333;
+    transition: 500ms;
+}
+
+.desencriptar:hover{
+    transform: scale(1.1);
+    background-color: white;
+}

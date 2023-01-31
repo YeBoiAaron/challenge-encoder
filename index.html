@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="titulo">
+                <h1>Encriptador de texto</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="texto">
+                <textarea autofocus placeholder="Ingresa el texto aquí..." class="texto-entrada"></textarea>
+
+                <textarea readonly class="texto-salida"></textarea>
+            </div>
+
+            <p class="advertencia"><iconify-icon inline icon="bi:exclamation-circle""></iconify-icon> Solo letras minúsculas sin acentos</p>
+
+            <div class="botones">
+                <input type="button" value="Encriptar" class="encriptar">
+                <input type="button" value="Desencriptar" class="desencriptar">
+            </div>
+        </main>
+    </body>
+</html>
