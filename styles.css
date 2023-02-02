@@ -18,10 +18,10 @@ body{
 }
 
 .texto textarea{
+    padding: 20px;
     border: none;
     overflow: auto;
     outline: none;
-    padding: 20px;
     resize: none;
 }
 
@@ -31,7 +31,7 @@ body{
     width: 55%;
     margin-left: 5%;
     vertical-align: top;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 
 .texto-salida{
@@ -68,23 +68,35 @@ body{
 .encriptar{
     border: none;
     background-color: #333333;
-    color: white;
+    color: #ffffff;
     transition: 500ms;
 }
 
 .encriptar:hover{
     transform: scale(1.1);
-    background-color: black;
+    background-color: #000000;
 }
 
 .desencriptar{
     border-color: #333333;
-    background-color: #F3F3F3;
+    background-color: #f0f8ff;
     color: #333333;
     transition: 500ms;
 }
 
 .desencriptar:hover{
     transform: scale(1.1);
-    background-color: white;
+    background-color: #e0e8ef;
+}
+
+.copiar{
+    border-color: #333333;
+    background-color: #f0f8ff;
+    color: #333333;
+    transition: 500ms;
+}
+
+.copiar:hover{
+    transform: scale(1.1);
+    background-color: #e0e8ef;
 }

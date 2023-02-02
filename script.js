@@ -1,9 +1,9 @@
-const textoEntrada = document.getElementById("input");
 const botonEncriptar = document.querySelector(".encriptar");
 const botonDesencriptar = document.querySelector(".desencriptar");
+const botonCopiar = document.querySelector(".copiar");
 
 function encriptar(){
-    let texto = textoEntrada.value;
+    let texto = input.value;
     texto = texto.replace(/e/g, "enter");
     texto = texto.replace(/i/g, "imes");
     texto = texto.replace(/a/g, "ai");
@@ -13,7 +13,7 @@ function encriptar(){
 }
 
 function desencriptar(){
-    let texto = textoEntrada.value;
+    let texto = input.value;
     texto = texto.replace(/enter/g, 'e');
     texto = texto.replace(/imes/g, 'i');
     texto = texto.replace(/ai/g, 'a');
@@ -22,5 +22,12 @@ function desencriptar(){
     output.value = texto;
 }
 
+function copiar(){
+    if(output.value != ''){
+        input.value = output.value;
+    }
+}
+
 botonEncriptar.addEventListener("click", encriptar);
 botonDesencriptar.addEventListener("click", desencriptar);
+botonCopiar.addEventListener("click", copiar);
