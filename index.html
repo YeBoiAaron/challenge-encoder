@@ -25,7 +25,10 @@
             <div class="texto">
                 <textarea id="input" autofocus placeholder="Ingresa el texto aquí..." class="texto-entrada"></textarea>
                 
-                <textarea id="output" readonly class="texto-salida"></textarea>
+                <div class="texto-imagen">
+                    <img src="images/error.png" alt="Imagen buscando texto" class="imagen">
+                    <textarea id="output" readonly placeholder="No se ha encontrado texto" class="texto-salida"></textarea>
+                </div>
             </div>
 
             <p class="advertencia"><iconify-icon inline icon="bi:exclamation-circle""></iconify-icon> Solo letras minúsculas sin acentos</p>

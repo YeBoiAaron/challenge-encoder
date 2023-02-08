@@ -1,6 +1,7 @@
 const botonEncriptar = document.querySelector(".encriptar");
 const botonDesencriptar = document.querySelector(".desencriptar");
 const botonCopiar = document.querySelector(".copiar");
+const imagen = document.querySelector(".imagen");
 
 function encriptar(){
     let texto = input.value;
@@ -10,6 +11,13 @@ function encriptar(){
     texto = texto.replace(/o/g, "ober");
     texto = texto.replace(/u/g, "ufat");
     output.value = texto;
+    
+    if(input.value != ""){
+        ocultarImagen();
+    }
+    else if(input.value == ""){
+        mostrarImagen();
+    }
 }
 
 function desencriptar(){
@@ -20,12 +28,27 @@ function desencriptar(){
     texto = texto.replace(/ober/g, 'o');
     texto = texto.replace(/ufat/g, 'u');
     output.value = texto;
+
+    if(input.value != ""){
+        ocultarImagen();
+    }
+    else if(input.value == ""){
+        mostrarImagen();
+    }
 }
 
 function copiar(){
     if(output.value != ''){
         input.value = output.value;
     }
+}
+
+function ocultarImagen() {
+    imagen.style.visibility = "hidden";
+}
+
+function mostrarImagen() {
+    imagen.style.visibility = "visible";
 }
 
 botonEncriptar.addEventListener("click", encriptar);

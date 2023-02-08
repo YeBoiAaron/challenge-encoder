@@ -12,6 +12,13 @@ body{
     text-transform: uppercase;
 }
 
+.titulo h1{
+    width: max-content;
+    padding: 5px;
+    border: 3px solid;
+    box-shadow: 5px 5px 0 #000000;
+}
+
 .texto{
     margin: 40px 0 40px 0;
     height: 460px;
@@ -19,7 +26,6 @@ body{
 
 .texto textarea{
     padding: 20px;
-    border: none;
     overflow: auto;
     outline: none;
     resize: none;
@@ -28,23 +34,48 @@ body{
 .texto-entrada{
     font-size: 30px;
     height: 460px;
-    width: 55%;
+    width: 55vw;
+    border: none;
     margin-left: 5%;
     vertical-align: top;
     background-color: #f0f8ff;
 }
 
-.texto-salida{
-    font-size: 20px;
+.texto-entrada::placeholder{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.texto-imagen{
+    display: inline-block;
     height: 600px;
     width: 30%;
     margin-left: 10px;
-    border-radius: 10px;
 }
 
-.texto-entrada::placeholder{
+.imagen{
+    position: absolute;
+    width: 20vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    visibility: visible;
+}
+
+.texto-salida{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    border: 3px solid;
+    box-shadow: 5px 5px 0 #000000;
+}
+
+.texto-salida::placeholder{
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #000000;
 }
 
 .advertencia{
@@ -60,9 +91,9 @@ body{
 .botones input{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 30px;
-    border-radius: 20px;
     padding: 5px 15px 10px 15px;
     margin: 0 10px;
+    box-shadow: 5px 5px 0 black;
 }
 
 .encriptar{
