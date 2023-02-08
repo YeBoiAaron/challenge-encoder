@@ -1,1 +1,1 @@
-# challenge-encoder
+# Alura Challenge Encoder
